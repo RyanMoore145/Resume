@@ -5,7 +5,7 @@ html, body {
 	position: absolute;
 	font-family: Monospace, Helvetica, Arial;
 	font-size: 18px;
-	color: white;
+	color: black;
 	overflow-x: hidden;
 }
 
@@ -118,6 +118,7 @@ nav * {
 
 header {
 	background-color: #171918;
+	color: white;
 	margin: auto;
 	width: 100%;
 }
@@ -136,12 +137,34 @@ header {
 	transform: translate(0, -40px);
 }
 
-#contact_info * {
+#contact_info > * {
 	line-height: 0.7;
 }
 
 main {
 	background-color: white;
+	display: flex;
+}
+
+#skillsBar {
+	border: 2px solid;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-top: 50px;
+	width: 25vw;
+}
+
+#skillsBar h3 {
+	text-decoration: underline;
+	margin-left: 10px;
+}
+
+#skillsBar h4 {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
 }
 
 #mainNarrow {
@@ -153,11 +176,20 @@ section {
 	color: black;
 }
 
-section h4 {
+section > h3 {
 	text-decoration: underline;
+	position: sticky;
+	top: 50px;
+	background-color: white;
 }
 
-section p {
+section > h4 {
+	border-left: 5px solid #8A95A5;
+	padding-left: 10px;
+	margin-left: 10px;
+}
+
+section > p {
 	padding-left: 30px;
 	padding-bottom: 10px;
 }
@@ -169,11 +201,42 @@ section p {
 }
 
 .EducationTableElement {
-	flex-grow: 1;
+	flex: 1;
 	margin: 10px;
-	background-color: gray;
+	border: 1px solid gray;
+	box-shadow: 5px 10px;
+	padding-bottom: 10px;
 }
 
 .EducationTableElement img {
 	width: 95%;
+}
+
+.EducationTableElement *:not(img) {
+	padding-left: 20px;
+	line-height: 0.7;
+}
+
+.WorkElement {
+	border: 3px solid;
+	margin-bottom: 50px;
+	padding-bottom: 30px;
+	box-shadow: 5px 10px;
+}
+
+.WorkElement h4 {
+	border-left: 5px solid #8A95A5;
+	padding-left: 10px;
+	margin-left: 20px;
+}
+
+.WorkElement p {
+	margin-left: 50px;
+}
+
+footer {
+	border-top: 2px solid;
+	margin: auto;
+	margin-bottom: 75px;
+	width: 90vw;
 }
