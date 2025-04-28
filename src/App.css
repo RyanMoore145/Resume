@@ -1,19 +1,16 @@
 html, body {
-	height: 100vh;
-	width: 100vw;
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
 	position: absolute;
 	font-family: Monospace, Helvetica, Arial;
+	font-size: 18px;
 	color: white;
-	background-color: #171918;
+	overflow-x: hidden;
 }
 
 .App {
-	width: 80vw;
-	margin: auto;
-}
-
-div {
-	/*border: 2px solid;*/
+	width: 100vw;
 }
 
 h1 {
@@ -36,9 +33,12 @@ p {
 	font-size: 1rem;
 }
 
+* {
+	/*border: 2px solid;*/
+}
+
 .Typewriter {
 	width: fit-content;
-	height: fit-content;
 }
 
 .Typewriter * {
@@ -79,4 +79,101 @@ p {
 	100% {
 		color: white;
 	}
+}
+
+nav {
+	position: sticky;
+	top: 0;
+	height: 50px;
+	background-color: #171918;
+	z-index: 1;
+}
+
+#navAnimated {
+	background-color: white;
+	border-bottom: 1px solid gray;
+	height: 100%;
+	animation: navFadeIn 1s ease 3s both;
+}
+
+@keyframes navFadeIn {
+	0% {
+		opacity: 0.0;
+	}
+	100% {
+		opacity: 1.0;
+	}
+}
+
+nav img {
+	width: 40px;
+}
+
+nav * {
+	vertical-align: middle;
+	padding-top: 3px;
+	padding-right: 20px;
+	padding-left: 10px;
+}
+
+header {
+	background-color: #171918;
+	margin: auto;
+	width: 100%;
+}
+
+#headerNarrow {
+	margin: auto;
+	width: 75vw;
+	padding: 10px;
+}
+
+#name {
+	
+}
+
+#contact_info {
+	transform: translate(0, -40px);
+}
+
+#contact_info * {
+	line-height: 0.7;
+}
+
+main {
+	background-color: white;
+}
+
+#mainNarrow {
+	margin: auto;
+	width: 65vw;
+}
+
+section {
+	color: black;
+}
+
+section h4 {
+	text-decoration: underline;
+}
+
+section p {
+	padding-left: 30px;
+	padding-bottom: 10px;
+}
+
+.table {
+	display: flex;
+	width: 100%;
+	border: 2px solid;
+}
+
+.EducationTableElement {
+	flex-grow: 1;
+	margin: 10px;
+	background-color: gray;
+}
+
+.EducationTableElement img {
+	width: 95%;
 }
