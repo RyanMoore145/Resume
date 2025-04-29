@@ -55,51 +55,76 @@ function App() {
 						<h3>Work Experience</h3>
 					</div>
 					<div className="WorkElement">
-						<h4>Telemarketing Representative</h4>
-						<div className="WorkInfo">
-							<p>ECW Solutions - Dartmouth NS</p>
-							<p>Jun 2024 - Sept 2024</p>
+						<div className="WorkNameAndInfo">
+							<h4>Telemarketing Representative</h4>
+							<div className="WorkInfo">
+								<p>ECW Solutions - Dartmouth NS</p>
+								<p>Jun 2024 - Sept 2024</p>
+							</div>
 						</div>
-						<p>Contacted potential customers to promote water quality tests and schedule appointments.</p>
-						<p>Educated callers on the benefits of water testing and addressed inquiries.</p>
-						<p>Maintained an organized call log and appointment schedule.</p>
-						<p>Followed scripts and adapted messaging to engage customers affectively.</p>
-						<p>Provided excellent customer service and handled objections professionally.</p>
+						<div className="WorkDesc">
+							<p>Contacted potential customers to promote water quality tests and schedule appointments.</p>
+							<p>Educated callers on the benefits of water testing and addressed inquiries.</p>
+							<p>Maintained an organized call log and appointment schedule.</p>
+							<p>Followed scripts and adapted messaging to engage customers affectively.</p>
+							<p>Provided excellent customer service and handled objections professionally.</p>
+						</div>
 					</div>
 					<div className="WorkElement">
-						<h4>Weapons Technician, Reservist</h4>
-						<div className="WorkInfo">
-							<p>Canadian Armed Forces - Halifax NS</p>
-							<p>Nov 2021 - Jan 2024</p>
+						<div className="WorkNameAndInfo">
+							<h4>Weapons Technician, Reservist</h4>
+							<div className="WorkInfo">
+								<p>Canadian Armed Forces - Halifax NS</p>
+								<p>Nov 2021 - Jan 2024</p>
+							</div>
 						</div>
-						<p>Weapons Technicians are responsible for maintaining functional small arms and servicing non-functional small arms belonging to their unit.</p>
-						<p>Completed the Basic Training course, strengthening abilities in team building, time and stress management, quick critical thinking, and patience in a field and classroom environment.</p>
-						<p>Served two summers at Willow Park Armouries completing secondary courses including first aid training, maintaining inventory in the storage bay, and fulfilling general duties.</p>
+						<div className="WorkDesc">
+							<p>Weapons Technicians are responsible for maintaining functional small arms and servicing non-functional small arms belonging to their unit.</p>
+							<p>Completed the Basic Training course, strengthening abilities in team building, time and stress management, quick critical thinking, and patience in a field and classroom environment.</p>
+							<p>Served two summers at Willow Park Armouries completing secondary courses including first aid training, maintaining inventory in the storage bay, and fulfilling general duties.</p>
+						</div>
 					</div>
 					<div className="WorkElement">
-						<h4>AI Trainer</h4>
-						<div className="WorkInfo">
-							<p>DataAnnotation</p>
-							<p>Mar 2024 - Present</p>
+						<div className="WorkNameAndInfo">
+							<h4>AI Trainer</h4>
+							<div className="WorkInfo">
+								<p>DataAnnotation</p>
+								<p>Mar 2024 - Present</p>
+							</div>
 						</div>
-						<p>Evaluated and corrected AI responses to given prompts pertaining to subjects such as coding, life advice, and general knowledge from a work from home environment.</p>
+						<div className="WorkDesc">
+							<p>Evaluated and corrected AI responses to given prompts pertaining to subjects such as coding, life advice, and general knowledge from a work from home environment.</p>
+						</div>
 					</div>
 				</section>
 			</div>
-			<div id="skillsBar">
-				<h3>Skills</h3>
-				<section>
-					<h4>React / React Native</h4>
-					<p>Years of experience: 1</p>
-				</section>
-				<section>
-					<h4>C++</h4>
-					<p>Years of experience: 4</p>
-				</section>
-				<section>
-					<h4>Python</h4>
-					<p>Years of experience: 3</p>
-				</section>
+			<div id="sideBar">
+				<div className="sideBarGroup" id="skills">
+					<h3>Skills</h3>
+					<section>
+						<h4>React / React Native</h4>
+						<p>Years of experience: 1</p>
+					</section>
+					<section>
+						<h4>C++</h4>
+						<p>Years of experience: 4</p>
+					</section>
+					<section>
+						<h4>Python</h4>
+						<p>Years of experience: 3</p>
+					</section>
+					<section>
+						<h4>Git</h4>
+						<p>Years of experience: 3</p>
+					</section>
+				</div>
+				<div className="sideBarGroup" id="projects">
+					<h3>Projects</h3>
+					<section>
+						<h4>Sample</h4>
+						<p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">sample link</a></p>
+					</section>
+				</div>
 			</div>
 		</main>
 		<footer>
