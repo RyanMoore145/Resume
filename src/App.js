@@ -9,7 +9,8 @@ function App() {
 				<a href="#aboutMe">About Me</a>
 				<a href="#education">Education</a>
 				<a href="#workExperience">Work Experience</a>
-				<a href="#skillsBar">Skills</a>
+				<a href="#skills">Skills</a>
+				<a href="#projects">Projects</a>
 			</div>
 		</nav>
 		<header>
@@ -109,7 +110,7 @@ function App() {
 						<h4>C++</h4>
 						<p>Years of experience: 4</p>
 					</section>
-					<section>
+					<section id="projects">
 						<h4>Python</h4>
 						<p>Years of experience: 3</p>
 					</section>
