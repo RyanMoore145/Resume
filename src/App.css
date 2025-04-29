@@ -1,3 +1,9 @@
+:root {
+	--blue: #4F5D75;
+	--off-white: #F5F5F5;
+	--orange: #EA5C1F;
+}
+
 html, body {
 	margin: 0px;
 	padding: 0px;
@@ -6,6 +12,7 @@ html, body {
 	font-family: Monospace, Helvetica, Arial;
 	font-size: 18px;
 	color: black;
+	background-color: var(--off-white);
 	overflow-x: hidden;
 }
 
@@ -84,9 +91,9 @@ p {
 nav {
 	position: sticky;
 	top: 0;
-	height: 50px;
+	height: fit-contents;
 	background-color: #171918;
-	z-index: 1;
+	z-index: 2;
 }
 
 #navAnimated {
@@ -142,7 +149,7 @@ header {
 }
 
 main {
-	background-color: white;
+	background-color: var(--off-white);
 	display: flex;
 }
 
@@ -153,6 +160,7 @@ main {
 	margin-bottom: auto;
 	margin-top: 50px;
 	width: 25vw;
+	background-color: white;
 }
 
 #skillsBar h3 {
@@ -167,6 +175,15 @@ main {
 	padding-bottom: 0;
 }
 
+@media only screen and (max-width: 600px) {
+	main {
+		flex-direction: column;
+	}
+	#skillsBar {
+		width: 65vw;
+	}
+}
+
 #mainNarrow {
 	margin: auto;
 	width: 65vw;
@@ -176,15 +193,26 @@ section {
 	color: black;
 }
 
-section > h3 {
-	text-decoration: underline;
+.SectionTitle {
 	position: sticky;
-	top: 50px;
-	background-color: white;
+	top: 30px;
+	height: fit-contents;
+	width: 100%;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	margin-bottom: 10px;
+	background-color: var(--off-white);
+	border-top: 1px solid transparent;
+	border-bottom: 4px solid var(--orange);
+	z-index: 1;
+}
+
+.SectionTitle > h3 {
+	margin-bottom: auto;
 }
 
 section > h4 {
-	border-left: 5px solid #8A95A5;
+	border-left: 5px solid var(--blue);
 	padding-left: 10px;
 	margin-left: 10px;
 }
@@ -195,8 +223,11 @@ section > p {
 }
 
 .table {
-	display: flex;
+	display: inline-flex;
 	width: 100%;
+	min-width: fit-contents;
+	padding-bottom: 10px;
+	padding-right: 5px;
 	border: 2px solid;
 }
 
@@ -206,6 +237,7 @@ section > p {
 	border: 1px solid gray;
 	box-shadow: 5px 10px;
 	padding-bottom: 10px;
+	background-color: white;
 }
 
 .EducationTableElement img {
@@ -218,20 +250,35 @@ section > p {
 }
 
 .WorkElement {
+	position: relative;
 	border: 3px solid;
 	margin-bottom: 50px;
 	padding-bottom: 30px;
 	box-shadow: 5px 10px;
+	background-color: white;
 }
 
 .WorkElement h4 {
-	border-left: 5px solid #8A95A5;
+	border-left: 5px solid var(--blue);
 	padding-left: 10px;
 	margin-left: 20px;
+	margin-bottom: 40px;
+	width: 50%;
 }
 
 .WorkElement p {
-	margin-left: 50px;
+	margin-left: 40px;
+}
+
+.WorkInfo {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 40%;
+	max-height: 40%;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	border: 2px solid;
 }
 
 footer {
