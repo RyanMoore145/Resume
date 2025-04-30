@@ -1,6 +1,6 @@
 :root {
 	--black: #171918;
-	--blue: #4F5D75;
+	--blue: #4C5B9D;
 	--off-white: #F4F4F6;
 	--orange: #EA5C1F;
 }
@@ -81,12 +81,42 @@ p {
 
 @keyframes fadeIn {
 	0% {
-		color: transparent;
+		opacity: 0.0;
 		transform: translate(0, 20px);
 	}
 	100% {
-		color: white;
+		opacity: 1.0;
 	}
+}
+
+button {
+	cursor: pointer;
+	background-color: white;
+	border: none;
+	font-family: Monospace, Helvetica, Arial;
+	font-size: 1rem;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-left: 10px;
+	padding-right: 10px;
+	box-shadow: 6px 6px 0 0 var(--black), 12px 12px 0 0 white;
+	transition-duration: 400ms;
+}
+
+button:hover {
+	box-shadow: 9px 9px 0 0 var(--black), 17px 17px 0 0 white;
+	transform: translate(-5px, -5px);
+}
+
+#contactMe {
+	width: fit-content;
+	margin-left: auto;
+	margin-right: 5%;
+	margin-bottom: 40px;
+}
+
+#contactMe > * {
+	font-size: 2.618rem;
 }
 
 nav {
@@ -98,10 +128,17 @@ nav {
 }
 
 #navAnimated {
+	display: flex;
 	background-color: white;
 	border-bottom: 1px solid gray;
 	height: 100%;
 	animation: navFadeIn 1s ease 3s both;
+}
+
+#redirects {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: space-between;
 }
 
 @keyframes navFadeIn {
@@ -154,6 +191,7 @@ header {
 main {
 	background-color: var(--off-white);
 	display: flex;
+	margin-bottom: 20px;
 }
 
 #sideBar {
@@ -191,7 +229,7 @@ section {
 
 .SectionTitle {
 	position: sticky;
-	top: 35px;
+	top: 30px;
 	height: fit-contents;
 	width: 100%;
 	padding-bottom: 10px;
@@ -295,12 +333,12 @@ footer {
 
 @media only screen and (max-width: 800px) {
 	html, body {
-		font-size: 13px;
+		font-size: 16px;
 	}
 	#name > * {
 		font-size: 10vw;
 	}
-	#contact_info > * {
+	#contact_info * {
 		font-size: 4vw;
 	}
 	main {
@@ -315,5 +353,17 @@ footer {
 	}
 	.WorkNameAndInfo > h4 {
 		font-size: 1.5rem;
+	}
+}
+ 
+@media only screen and (max-width: 600px) {
+	html, body {
+		font-size: 14px;
+	}
+	.WorkNameAndInfo > h4 {
+		font-size: 1.3rem;
+	}
+	.SectionTitle {
+		top: 50px;
 	}
 }
