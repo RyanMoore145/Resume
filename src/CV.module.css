@@ -5,40 +5,8 @@
 	--orange: #EA5C1F;
 }
 
-html, body {
-	margin: 0px;
-	padding: 0px;
-	height: 100%;
-	position: absolute;
-	font-family: Monospace, Helvetica, Arial;
-	font-size: 18px;
-	color: black;
-	background-color: var(--off-white);
-	overflow-x: hidden;
-}
-
-.App {
+.Page {
 	width: 100vw;
-}
-
-h1 {
-	font-size: 6.854rem
-}
-
-h2 {
-	font-size: 4.236rem
-}
-
-h3 {
-	font-size: 2.618rem
-}
-
-h4 {
-	font-size: 1.618rem
-}
-
-p {
-	font-size: 1rem;
 }
 
 * {
@@ -89,7 +57,7 @@ p {
 	}
 }
 
-button {
+.ShadowButton {
 	cursor: pointer;
 	background-color: white;
 	border: none;
@@ -103,7 +71,7 @@ button {
 	transition-duration: 400ms;
 }
 
-button:hover {
+.ShadowButton:hover {
 	box-shadow: 9px 9px 0 0 var(--black), 17px 17px 0 0 white;
 	transform: translate(-5px, -5px);
 }
@@ -119,7 +87,7 @@ button:hover {
 	font-size: 2.618rem;
 }
 
-nav {
+.Page nav {
 	position: sticky;
 	top: 0;
 	height: fit-contents;
@@ -150,11 +118,11 @@ nav {
 	}
 }
 
-nav img {
+.Page nav img {
 	width: 40px;
 }
 
-nav * {
+.Page nav * {
 	vertical-align: middle;
 	padding-top: 3px;
 	padding-right: 20px;
@@ -162,7 +130,7 @@ nav * {
 	padding-bottom: 3px;
 }
 
-header {
+.Page header {
 	background-color: var(--black);
 	color: white;
 	margin: auto;
@@ -175,7 +143,7 @@ header {
 	padding: 10px;
 }
 
-#contact_info {
+#contactInfo {
 	margin-top: 0;
 	padding-top: 0;
 }
@@ -184,11 +152,11 @@ header {
 	margin-bottom: 0;
 }
 
-#contact_info > * {
+#contactInfo > * {
 	line-height: 0.7;
 }
 
-main {
+.Page main {
 	background-color: var(--off-white);
 	display: flex;
 	margin-bottom: 20px;
@@ -199,19 +167,19 @@ main {
 	margin-right: 2%;
 }
 
-.sideBarGroup {
+.SideBarGroup {
 	border: 2px solid;
 	margin-top: 50px;
 	background-color: white;
 }
 
-.sideBarGroup h3 {
+.SideBarGroup h3 {
 	font-size: 6vmin;
 	text-decoration: underline;
 	margin-left: 10px;
 }
 
-.sideBarGroup h4 {
+.SideBarGroup h4 {
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-top: 0;
@@ -223,7 +191,7 @@ main {
 	width: 65vw;
 }
 
-section {
+.Page section {
 	color: black;
 }
 
@@ -240,22 +208,26 @@ section {
 	z-index: 1;
 }
 
+.SectionTitle + * {
+	margin-top: 20px;
+}
+
 .SectionTitle > h3 {
 	margin-bottom: auto;
 }
 
-section > h4 {
+.Page section > h4 {
 	border-left: 5px solid var(--blue);
 	padding-left: 10px;
 	margin-left: 10px;
 }
 
-section > p {
+.Page section > p {
 	padding-left: 30px;
 	padding-bottom: 10px;
 }
 
-.table {
+.Table {
 	display: inline-flex;
 	width: 100%;
 	min-width: fit-contents;
@@ -324,7 +296,7 @@ section > p {
 	padding-bottom: 30px;
 }
 
-footer {
+.Page footer {
 	border-top: 2px solid;
 	margin: auto;
 	margin-bottom: 75px;
@@ -332,16 +304,13 @@ footer {
 }
 
 @media only screen and (max-width: 800px) {
-	html, body {
-		font-size: 16px;
-	}
 	#name > * {
 		font-size: 10vw;
 	}
-	#contact_info * {
+	#contactInfo * {
 		font-size: 4vw;
 	}
-	main {
+	.Page main {
 		flex-direction: column;
 	}
 	#mainNarrow {
@@ -357,12 +326,6 @@ footer {
 }
  
 @media only screen and (max-width: 600px) {
-	html, body {
-		font-size: 14px;
-	}
-	.WorkNameAndInfo > h4 {
-		font-size: 1.3rem;
-	}
 	.SectionTitle {
 		top: 50px;
 	}
