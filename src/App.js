@@ -1,7 +1,8 @@
 import {
 	BrowserRouter,
 	Routes,
-	Route
+	Route,
+	Navigate
 } from "react-router-dom";
 
 import "./global.css";
@@ -16,7 +17,7 @@ function App() {
 		<BrowserRouter>
 			<Routes>
 				<Route path="/" element={<Layout/>}>
-					<Route index element={<CV/>}/>
+					<Route path="/" element={<Navigate replace to="/CV"/>}/>
 					<Route path="CV" element={<CV/>}/>
 					<Route path="ContactMe" element={<ContactMe/>}/>
 				</Route>

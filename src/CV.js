@@ -14,18 +14,6 @@ export default function CV() {
 	
 	return (
 	<div className={styles.Page}>
-		<nav>
-			<div id={styles.navAnimated}>
-				<img src="R.svg"></img>
-				<div id={styles.redirects}>
-					<a href="#aboutMe">About Me</a>
-					<a href="#education">Education</a>
-					<a href="#workExperience">Work Experience</a>
-					<a href="#skills">Skills</a>
-					<a href="#projects">Projects</a>
-				</div>
-			</div>
-		</nav>
 		<header>
 			<div id={styles.headerNarrow}>
 				<div className={styles.Typewriter} id={styles.name}>
@@ -144,13 +132,14 @@ export default function CV() {
 					<section>
 						<h4>Sample</h4>
 						<p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">sample link</a></p>
-					</section>
+					</section>0
 				</div>
 			</div>
 		</main>
 		<footer>
 			<h4>Source code:</h4>
 			<a href="https://github.com/RyanMoore145/CV">https://github.com/RyanMoore145/CV</a>
+			<a href="https://github.com/RyanMoore145/ContactMeServer">https://github.com/RyanMoore145/ContactMeServer</a>
 		</footer>
 	</div>
 	);

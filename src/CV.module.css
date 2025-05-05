@@ -1,16 +1,7 @@
-:root {
-	--black: #171918;
-	--blue: #4C5B9D;
-	--off-white: #F4F4F6;
-	--orange: #EA5C1F;
-}
+
 
 .Page {
 	width: 100vw;
-}
-
-* {
-	/*border: 2px solid;*/
 }
 
 .Typewriter {
@@ -61,8 +52,6 @@
 	cursor: pointer;
 	background-color: white;
 	border: none;
-	font-family: Monospace, Helvetica, Arial;
-	font-size: 1rem;
 	padding-top: 7px;
 	padding-bottom: 7px;
 	padding-left: 10px;
@@ -84,50 +73,7 @@
 }
 
 #contactMe > * {
-	font-size: 2.618rem;
-}
-
-.Page nav {
-	position: sticky;
-	top: 0;
-	height: fit-contents;
-	background-color: var(--black);
-	z-index: 2;
-}
-
-#navAnimated {
-	display: flex;
-	background-color: white;
-	border-bottom: 1px solid gray;
-	height: 100%;
-	animation: navFadeIn 1s ease 3s both;
-}
-
-#redirects {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: space-between;
-}
-
-@keyframes navFadeIn {
-	0% {
-		opacity: 0.0;
-	}
-	100% {
-		opacity: 1.0;
-	}
-}
-
-.Page nav img {
-	width: 40px;
-}
-
-.Page nav * {
-	vertical-align: middle;
-	padding-top: 3px;
-	padding-right: 20px;
-	padding-left: 10px;
-	padding-bottom: 3px;
+	font-size: 1.618rem;
 }
 
 .Page header {
@@ -303,12 +249,17 @@
 	width: 90vw;
 }
 
+.Page footer a {
+	display: block;
+	padding-bottom: 10px;
+}
+
 @media only screen and (max-width: 800px) {
 	#name > * {
 		font-size: 10vw;
 	}
 	#contactInfo * {
-		font-size: 4vw;
+		font-size: 3.5vw;
 	}
 	.Page main {
 		flex-direction: column;
@@ -321,7 +272,10 @@
 		margin: auto;
 	}
 	.WorkNameAndInfo > h4 {
-		font-size: 1.5rem;
+		font-size: 4.8vmin;
+	}
+	.EducationTableElement > h4 {
+		font-size: 4.8vmin;
 	}
 }
  

@@ -1,7 +1,15 @@
+:root {
+	--black: #171918;
+	--blue: #4C5B9D;
+	--off-white: #F4F4F6;
+	--orange: #EA5C1F;
+}
+
 html, body {
 	margin: 0px;
 	padding: 0px;
 	height: 100%;
+	width: 100%;
 	position: absolute;
 	font-family: Monospace, Helvetica, Arial;
 	font-size: 18px;
@@ -28,4 +36,18 @@ h4 {
 
 p {
 	font-size: 1rem;
+}
+
+.Link {
+	background: none;
+	border: none;
+	color: blue;
+	font-size: 1rem;
+	text-decoration: underline;
+	cursor: pointer;
+	margin: 0;
+}
+
+button {
+	font-family: Monospace, Helvetica, Arial;
 }
