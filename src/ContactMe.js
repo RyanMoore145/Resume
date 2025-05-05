@@ -21,9 +21,9 @@ export default function ContactMe() {
 	
 	async function onClickSubmit() {
 		if (
-			senderEmail.trim().length == 0 ||
-			emailHeader.trim().length == 0 ||
-			emailBody.trim().length == 0
+			senderEmail.trim().length === 0 ||
+			emailHeader.trim().length === 0 ||
+			emailBody.trim().length === 0
 		) {
 			setError("Please fill all fields");
 			return;

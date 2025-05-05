@@ -9,6 +9,7 @@ import "./global.css";
 
 import Layout from "./Layout.js";
 import Resume from "./Resume.js";
+import Projects from "./Projects.js";
 import ContactMe from "./ContactMe.js";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
 				<Route path="/" element={<Layout/>}>
 					<Route path="/" element={<Navigate replace to="/Resume"/>}/>
 					<Route path="Resume" element={<Resume/>}/>
+					<Route path="Projects" element={<Projects/>}/>
 					<Route path="ContactMe" element={<ContactMe/>}/>
 				</Route>
 			</Routes>

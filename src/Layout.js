@@ -19,7 +19,7 @@ export default function Layout() {
 	const location = useLocation();
 	
 	//ENSURES ANIMATION DOESNT PLAY EVERY TIME USER RETURNS TO RESUME
-	if (lastViewedPage.current == "/Resume" && location.pathname != "/Resume") {
+	if (lastViewedPage.current === "/Resume" && location.pathname !== "/Resume") {
 		hasViewedResume.current = true;
 	}
 	lastViewedPage.current = location.pathname;
@@ -33,9 +33,10 @@ export default function Layout() {
 		<div className={styles.Screen}>
 			<nav>
 				<div className={`${styles.TopNav} ${navStyle}`}>
-					<img src="R.svg"></img>
+					<img src="R.svg" alt="A logo of an R"></img>
 					<div id={styles.redirects}>
 						<button className="Link" onClick={() => {navigate("Resume")}}>Resume</button>
+						<button className="Link" onClick={() => {navigate("Projects")}}>Projects</button>
 						<button className="Link" onClick={() => {navigate("ContactMe")}}>Contact Me</button>
 					</div>
 				</div>

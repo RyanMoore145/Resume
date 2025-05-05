@@ -115,9 +115,15 @@
 	margin-right: 2%;
 }
 
+#sideBar p {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
 .SideBarGroup {
 	border: 2px solid;
 	margin-top: 50px;
+	padding-bottom: 30px;
 	background-color: white;
 }
 
@@ -128,7 +134,7 @@
 
 .SideBarGroup h4 {
 	margin-top: 0;
-	margin-bottom: 0;
+	margin-bottom: 15px;
 	padding-top: 0;
 	padding-bottom: 0;
 }

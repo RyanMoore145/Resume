@@ -1,6 +1,7 @@
 import {
 	useNavigate,
-	useOutletContext
+	useOutletContext,
+	Link
 } from "react-router-dom";
 
 import styles from "./Resume.module.css";
@@ -53,12 +54,12 @@ export default function Resume() {
 					<h4>Bachelor's of Computer Science</h4>
 					<div className={styles.Table}>
 						<div className={styles.EducationTableElement}>
-							<img src="dalhousie.jpeg"></img>
+							<img src="dalhousie.jpeg" alt="Dalhousie University"></img>
 							<h4>Dalhousie University</h4>
 							<p> Sept 2022 - Present</p>
 						</div>
 							<div className={styles.EducationTableElement}>
-							<img src="acadia.jpg"></img>
+							<img src="acadia.jpg" alt="Acadia University"></img>
 							<h4>Acadia University</h4>
 							<p>Sept 2021 - May 2022</p>
 						</div>
@@ -118,6 +119,7 @@ export default function Resume() {
 					<section>
 						<h4>React / React Native</h4>
 						<p>Years of experience: 1</p>
+						<p>- <Link to="/Projects">PawPals Mobile App</Link></p>
 					</section>
 					<section>
 						<h4>JavaScript</h4>
@@ -126,21 +128,17 @@ export default function Resume() {
 					<section>
 						<h4>C++</h4>
 						<p>Years of experience: 4</p>
+						<p>- <Link to="/Projects">Custom RSA Algorithm</Link></p>
+						<p>- <Link to="/Projects">Socket Networking Tool</Link></p>
 					</section>
-					<section id="projects">
+					<section>
 						<h4>Python</h4>
 						<p>Years of experience: 3</p>
+						<p>- <Link to="/Projects">3D Graphics Engine</Link></p>
 					</section>
 					<section>
 						<h4>Git</h4>
 						<p>Years of experience: 3</p>
-					</section>
-				</div>
-				<div className={styles.SideBarGroup} id="projects">
-					<h3>Projects</h3>
-					<section>
-						<h4>Sample</h4>
-						<p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">sample link</a></p>
 					</section>
 				</div>
 			</div>
