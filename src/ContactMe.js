@@ -75,7 +75,7 @@ export default function ContactMe() {
 					<label htmlFor="emailHeader">Header: </label>
 					<input id="emailHeader" type="text" value={emailHeader} onChange={e => setEmailHeader(e.target.value)}/>
 					<label htmlFor="emailBody">Body: </label>
-					<textarea id="emailBody" value={emailBody} maxlength={1000} onChange={e => setEmailBody(e.target.value)}/>
+					<textarea id="emailBody" value={emailBody} maxLength={1000} onChange={e => setEmailBody(e.target.value)}/>
 					<button className={styles.SubmitButton} onClick={onClickSubmit}>Submit</button>
 					<p>{error}</p>
 				</div>

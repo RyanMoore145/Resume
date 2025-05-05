@@ -1,4 +1,8 @@
 import {
+	useRef
+} from "react";
+
+import {
 	Outlet,
 	useNavigate,
 	useLocation
@@ -8,11 +12,20 @@ import styles from "./Layout.module.css";
 
 export default function Layout() {
 	
+	const lastViewedPage = useRef(null);
+	const hasViewedCV = useRef(false);
+	
 	const navigate = useNavigate();
 	const location = useLocation();
 	
+	//ENSURES ANIMATION DOESNT PLAY EVERY TIME USER RETURNS TO CV
+	if (lastViewedPage.current == "/CV" && location.pathname != "/CV") {
+		hasViewedCV.current = true;
+	}
+	lastViewedPage.current = location.pathname;
+	
 	let navStyle = null;
-	if (location.pathname === "/" || location.pathname === "/CV") {
+	if (location.pathname === "/CV" && !hasViewedCV.current) {
 		navStyle = styles.TopNavAnimated;
 	}
 	
@@ -28,7 +41,7 @@ export default function Layout() {
 				</div>
 			</nav>
 			<div className={styles.Page}>
-				<Outlet/>
+				<Outlet context={{hasViewedCV: hasViewedCV.current}}/>
 			</div>
 		</div>
 	);

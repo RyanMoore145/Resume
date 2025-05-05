@@ -1,12 +1,21 @@
 import {
-	useNavigate
+	useNavigate,
+	useOutletContext
 } from "react-router-dom";
 
 import styles from "./CV.module.css";
 
 export default function CV() {
 	
+	const context = useOutletContext();
 	const navigate = useNavigate();
+	
+	let typewriterAnimation = styles.Typewriter;
+	let fadeInAnimation = styles.FadeIn;
+	if (context.hasViewedCV) {
+		typewriterAnimation = "";
+		fadeInAnimation = "";
+	}
 
 	function onClickContactMe() {
 		navigate("/ContactMe");
@@ -16,10 +25,10 @@ export default function CV() {
 	<div className={styles.Page}>
 		<header>
 			<div id={styles.headerNarrow}>
-				<div className={styles.Typewriter} id={styles.name}>
+				<div className={typewriterAnimation} id={styles.name}>
 					<h1>Ryan Moore</h1>
 				</div>
-				<div className={styles.FadeIn} id={styles.contactInfo}>
+				<div className={fadeInAnimation} id={styles.contactInfo}>
 					<h3>(902) 321-6542</h3>
 					<h3>ry331186@dal.ca</h3>
 					<div id={styles.contactMe}>

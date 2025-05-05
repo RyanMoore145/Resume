@@ -2,7 +2,8 @@ import {
 	BrowserRouter,
 	Routes,
 	Route,
-	Navigate
+	Navigate,
+	useLocation
 } from "react-router-dom";
 
 import "./global.css";
