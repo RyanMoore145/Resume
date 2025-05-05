@@ -2,14 +2,13 @@ import {
 	BrowserRouter,
 	Routes,
 	Route,
-	Navigate,
-	useLocation
+	Navigate
 } from "react-router-dom";
 
 import "./global.css";
 
 import Layout from "./Layout.js";
-import CV from "./CV.js";
+import Resume from "./Resume.js";
 import ContactMe from "./ContactMe.js";
 
 function App() {
@@ -18,8 +17,8 @@ function App() {
 		<BrowserRouter>
 			<Routes>
 				<Route path="/" element={<Layout/>}>
-					<Route path="/" element={<Navigate replace to="/CV"/>}/>
-					<Route path="CV" element={<CV/>}/>
+					<Route path="/" element={<Navigate replace to="/Resume"/>}/>
+					<Route path="Resume" element={<Resume/>}/>
 					<Route path="ContactMe" element={<ContactMe/>}/>
 				</Route>
 			</Routes>

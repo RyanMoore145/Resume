@@ -3,16 +3,16 @@ import {
 	useOutletContext
 } from "react-router-dom";
 
-import styles from "./CV.module.css";
+import styles from "./Resume.module.css";
 
-export default function CV() {
+export default function Resume() {
 	
 	const context = useOutletContext();
 	const navigate = useNavigate();
 	
 	let typewriterAnimation = styles.Typewriter;
 	let fadeInAnimation = styles.FadeIn;
-	if (context.hasViewedCV) {
+	if (context.hasViewedResume) {
 		typewriterAnimation = "";
 		fadeInAnimation = "";
 	}
@@ -147,7 +147,7 @@ export default function CV() {
 		</main>
 		<footer>
 			<h4>Source code:</h4>
-			<a href="https://github.com/RyanMoore145/CV">https://github.com/RyanMoore145/CV</a>
+			<a href="https://github.com/RyanMoore145/Resume">https://github.com/RyanMoore145/Resume</a>
 			<a href="https://github.com/RyanMoore145/ContactMeServer">https://github.com/RyanMoore145/ContactMeServer</a>
 		</footer>
 	</div>
