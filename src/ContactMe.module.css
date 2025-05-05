@@ -27,7 +27,7 @@
 }
 
 .FormHeader {
-	height: 50px;
+	height: fit-content;
 	background-color: var(--orange);
 	border-bottom: 1px solid black;
 	color: white;
@@ -101,7 +101,7 @@
 	margin-bottom: 20px;
 }
 
-footer {
+.Page footer {
 	text-align: right;
 }
 
@@ -117,6 +117,10 @@ footer {
 	.ContactContainer > * {
 		width: 90%;
 		padding-bottom: 30px;
+	}
+	
+	.FormHeader * {
+		font-size: 5.8vmin;
 	}
 	
 	#contactMeMessage {
