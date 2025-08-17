@@ -1,0 +1,55 @@
+.Page > header {
+	width: 90%;
+	height: fit-contents;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	border-top: 1px solid transparent;
+	border-bottom: 4px solid var(--orange);
+	padding-bottom: 10px;
+	margin-left: 20px;
+}
+
+.Page > header > h3 {
+	margin-bottom: 10px;
+}
+
+.Page > main {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.List {
+	border: 2px solid black;
+	margin: auto;
+	width: 70%;
+	background-color: white;
+	margin-top: 15px;
+}
+
+.Item {
+	display: flex;
+	border: 1px solid black;
+	margin: 10px;
+}
+
+.ItemInfo {
+	flex: 5;
+}
+
+.Item h4 {
+	margin-left: 10px;
+	border-left: 5px solid var(--blue);
+	padding-left: 10px;
+}
+
+.Page footer {
+	border-top: 2px solid;
+	margin: auto;
+	margin-bottom: 75px;
+	width: 90vw;
+}
+
+.Page footer a {
+	display: block;
+	padding-bottom: 10px;
+}

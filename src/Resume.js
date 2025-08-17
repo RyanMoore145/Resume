@@ -71,6 +71,22 @@ export default function Resume() {
 					</div>
 					<div className={styles.WorkElement}>
 						<div className={styles.WorkNameAndInfo}>
+							<h4>IT Intern</h4>
+							<div className={styles.WorkInfo}>
+								<p>Nova Insurance - Dartmouth NS</p>
+								<p>June 2025 - Sept 2025</p>
+							</div>
+						</div>
+						<div className={styles.WorkDesc}>
+							<p>Created and managed a tech support ticketing system using SharePoint, Microsoft Power Automate, and Power Apps.</p>
+							<p>Monitored and updated support requests to ensure timely issue resolution.</p>
+							<p>Assisted staff with technical problems, including troubleshooting Excel macros and other software tools.</p>
+							<p>Performed front desk duties and provided in-person support to visitors and employees.</p>
+							<p>Contacted clients to promote and support the transition to paperless processes.</p>
+						</div>
+					</div>
+					<div className={styles.WorkElement}>
+						<div className={styles.WorkNameAndInfo}>
 							<h4>Telemarketing Representative</h4>
 							<div className={styles.WorkInfo}>
 								<p>ECW Solutions - Dartmouth NS</p>

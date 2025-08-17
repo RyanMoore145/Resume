@@ -2,7 +2,6 @@ import {
 	useState
 } from "react";
 
-import "./global.css";
 import styles from "./ContactMe.module.css";
 
 export default function ContactMe() {
@@ -29,7 +28,7 @@ export default function ContactMe() {
 			return;
 		}
 		try {
-			const res = await fetch("https://ryan-a-moore.com/ContactMeServer/", {
+			const res = await fetch("https://ryan-a-moore.com:3101/", {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json"
@@ -82,7 +81,7 @@ export default function ContactMe() {
 			</div>
 		</main>
 		<footer>
-			<a id={styles.link} href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">Link</a>
+			<a id={styles.link} href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Link</a>
 		</footer>
 	</div>
 	);
